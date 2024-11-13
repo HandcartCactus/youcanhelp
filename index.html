@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Can Help</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f9;
+    }
+    .grid-container {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      max-width: 1000px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: #333;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <a href="volunteer.html" class="card">
+      <svg class="icon" viewBox="0 0 64 64"><!-- Example SVG --></svg>
+      <div class="title">Local Volunteer Opportunities</div>
+    </a>
+    <a href="skills.html" class="card">
+      <svg class="icon" viewBox="0 0 64 64"><!-- Example SVG --></svg>
+      <div class="title">Skills Connector</div>
+    </a>
+    <a href="donate.html" class="card">
+      <svg class="icon" viewBox="0 0 64 64"><!-- Example SVG --></svg>
+      <div class="title">Donate Local</div>
+    </a>
+    <a href="contact.html" class="card">
+      <svg class="icon" viewBox="0 0 64 64"><!-- Example SVG --></svg>
+      <div class="title">Contact Your Representatives</div>
+    </a>
+  </div>
+
+</body>
+</html>
