@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>You Can Help</title>
   <style>
-        * {
+         * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -17,12 +17,13 @@
       align-items: center;
       min-height: 100vh;
       background-color: #f4f4f9;
+      overflow-x: hidden;
     }
     .grid-container {
       display: grid;
       gap: 20px;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      max-width: 1000px;
+      max-width: 90vw; /* Sets maximum width to fit viewport */
       padding: 20px;
     }
     .card {
@@ -48,13 +49,6 @@
       font-size: 1.2rem;
       font-weight: bold;
       margin-top: 10px;
-    }
-
-    /* Responsive adjustments for smaller screens */
-    @media (max-width: 600px) {
-      .grid-container {
-        grid-template-columns: 1fr;
-      }
     }
   </style>
 </head>
